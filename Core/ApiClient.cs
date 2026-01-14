@@ -12,8 +12,13 @@ namespace MiniApiFramework.Core
         {
             _httpClient = new HttpClient
             {
-                BaseAddress = new System.Uri(baseUrl);
+                BaseAddress = new System.Uri(baseUrl)
             };
+        }
+
+        public async Task<HttpResponseMessage> GetAsync()
+        {
+
         }
     }
 }
