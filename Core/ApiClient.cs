@@ -16,9 +16,9 @@ namespace MiniApiFramework.Core
             };
         }
 
-        public async Task<HttpResponseMessage> GetAsync()
+        public async Task<HttpResponseMessage> GetAsync(string endpoint)
         {
-
+            return await _httpClient.GetAsync(endpoint);
         }
     }
 }
