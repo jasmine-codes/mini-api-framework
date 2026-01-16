@@ -10,6 +10,7 @@ namespace MiniApiFramework.Core
          [SetUp]
     public void SetUp()
     {
+        ApiClient = new ApiClient("https://jsonplaceholder.typicode.com");
     }
 
     }
