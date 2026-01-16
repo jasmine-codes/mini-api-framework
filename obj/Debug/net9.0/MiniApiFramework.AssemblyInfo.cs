@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniApiFramework")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd58f278a71d6a68b84e95417787a3258a13fcbb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+53d4af2691118700eae54a218a063ac0b477f432")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniApiFramework")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniApiFramework")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
