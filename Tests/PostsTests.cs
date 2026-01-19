@@ -8,6 +8,10 @@ namespace MiniApiFramework.Tests
 {
     public class PostsTests : BaseTest
     {
-        
+        [Test]
+        public async Task Get_All_Posts_Returns_Data()
+        {
+            
+        }
     }
 }
