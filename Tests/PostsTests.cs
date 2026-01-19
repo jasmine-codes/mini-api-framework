@@ -11,7 +11,7 @@ namespace MiniApiFramework.Tests
         [Test]
         public async Task Get_All_Posts_Returns_Data()
         {
-            
+         var posts = await ApiClient.GetAsync<List<Post>>("/posts");   
         }
     }
 }
