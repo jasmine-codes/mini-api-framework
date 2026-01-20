@@ -15,6 +15,7 @@ namespace MiniApiFramework.Tests
          var posts = await ApiClient.GetAsync<List<Post>>("/posts");
 
          Assert.That(posts, Is.Not.Null);
+         Assert.That(posts!.Count, Is.GreaterThan(0));
         }
     }
 }
