@@ -2,6 +2,7 @@ using MiniApiFramework.Core;
 using MiniApiFramework.Models;
 using NUnit.Framework;
 using System.Collections.Generic;
+using System.Runtime;
 using System.Threading.Tasks;
 
 namespace MiniApiFramework.Tests
@@ -11,7 +12,9 @@ namespace MiniApiFramework.Tests
         [Test]
         public async Task Get_All_Posts_Returns_Data()
         {
-         var posts = await ApiClient.GetAsync<List<Post>>("/posts");   
+         var posts = await ApiClient.GetAsync<List<Post>>("/posts");
+
+         Assert.That(posts, Is.Not.Null);
         }
     }
 }
