@@ -16,6 +16,7 @@ namespace MiniApiFramework.Tests
 
          Assert.That(posts, Is.Not.Null);
          Assert.That(posts!.Count, Is.GreaterThan(0));
+         Assert.That(posts[0].Title, Is.Not.Empty);
         }
     }
 }
