@@ -25,5 +25,10 @@ namespace MiniApiFramework.Core
         {
             return await _httpClient.GetFromJsonAsync<T>(endpoint);
         }
+
+        public async Task<HttpResponseMesssage> PostAsync<T>(string endpoint, T body)
+        {
+            
+        }
     }
 }
