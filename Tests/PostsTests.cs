@@ -18,5 +18,11 @@ namespace MiniApiFramework.Tests
          Assert.That(posts!.Count, Is.GreaterThan(0));
          Assert.That(posts[0].Title, Is.Not.Empty);
         }
+
+        [Test]
+        public async Task Create_Post_Returns_201()
+        {
+            
+        }
     }
 }
