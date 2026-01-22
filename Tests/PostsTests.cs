@@ -22,7 +22,12 @@ namespace MiniApiFramework.Tests
         [Test]
         public async Task Create_Post_Returns_201()
         {
-            var newPost = new CreatePostRequest;
+            var newPost = new CreatePostRequest
+            {
+                UserId = 1,
+                Title = "Hello QA World",
+                Body = "Testing APIs is fun"
+            };
         }
     }
 }
