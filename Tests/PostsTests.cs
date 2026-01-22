@@ -28,6 +28,10 @@ namespace MiniApiFramework.Tests
                 Title = "Hello QA World",
                 Body = "Testing APIs is fun"
             };
+
+            var response = await ApiClient.PostAsync("/posts", newPost);
+
+            Assert.That(response.StatusCode, Is.EqualTo(System.Net.HttpStatusCode.Created));
         }
     }
 }
