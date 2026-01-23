@@ -33,5 +33,11 @@ namespace MiniApiFramework.Tests
 
             Assert.That(response.StatusCode, Is.EqualTo(System.Net.HttpStatusCode.Created));
         }
+
+        [Test]
+        public async Task Get_Invalid_Post_Returns_404()
+        {
+            
+        }
     }
 }
