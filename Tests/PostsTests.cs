@@ -37,6 +37,7 @@ namespace MiniApiFramework.Tests
         [Test]
         public async Task Get_Invalid_Post_Returns_404()
         {
+            var response = await ApiClient.GetAsync("/posts/999999");
             
         }
     }
