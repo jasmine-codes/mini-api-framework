@@ -50,8 +50,7 @@ namespace MiniApiFramework.Tests
             };
 
             var response = await ApiClient.PostAsync("/posts", invalidPost);
+            Assert.That(response.IsSuccessStatusCode, Is.False);
         }
-
-        //continue here - step 2.2
     }
 }
