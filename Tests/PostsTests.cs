@@ -48,6 +48,8 @@ namespace MiniApiFramework.Tests
             {
                 UserId = 1
             };
+
+            var response = await ApiClient.PostAsync("/posts", invalidPost);
         }
 
         //continue here - step 2.2
