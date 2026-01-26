@@ -42,8 +42,12 @@ namespace MiniApiFramework.Tests
         }
 
         [Test]
-        public async Task Create_Post_With_Missing_Data_Fails() {
-            
+        public async Task Create_Post_With_Missing_Data_Fails()
+        {
+            var invalidPost = new CreatePostRequest
+            {
+                
+            };
         }
 
         //continue here - step 2.2
