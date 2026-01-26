@@ -46,7 +46,7 @@ namespace MiniApiFramework.Tests
         {
             var invalidPost = new CreatePostRequest
             {
-                
+                UserId = 1
             };
         }
 
