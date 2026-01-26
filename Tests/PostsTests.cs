@@ -40,5 +40,12 @@ namespace MiniApiFramework.Tests
             var response = await ApiClient.GetAsync("/posts/999999");
             Assert.That(response.StatusCode, Is.EqualTo(System.Net.HttpStatusCode.NotFound));
         }
+
+        [Test]
+        public async Task Create_Post_With_Missing_Data_Fails() {
+            
+        }
+
+        //continue here - step 2.2
     }
 }
