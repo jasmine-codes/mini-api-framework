@@ -52,8 +52,5 @@ namespace MiniApiFramework.Tests
             var response = await ApiClient.PostAsync("/posts", invalidPost);
             Assert.That(response.IsSuccessStatusCode, Is.False);
         }
-
-        //continue - STEP 3 + check bug -> test create post with missing data fails
-        //response.IsSuccessStatusCode should return false but it's returning true
     }
 }
