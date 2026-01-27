@@ -44,7 +44,12 @@ namespace MiniApiFramework.Tests
         [Test]
        public async Task Post_To_Invalid_Endpoint_Returns_404()
        {
-        
+        var post = new CreatePostRequest
+        {
+            UserId = 1,
+            Title = "Test",
+            Body = "Test"
+        };
        }
     }
 }
