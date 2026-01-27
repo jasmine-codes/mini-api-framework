@@ -52,6 +52,8 @@ namespace MiniApiFramework.Tests
         };
 
         var response = await ApiClient.PostAsync("/invalidendpoint", post);
+
+        Assert.That(response.StatusCode, Is.EqualTo(System.Net.HttpStatusCode.NotFound));
        }
     }
 }
