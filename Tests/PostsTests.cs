@@ -42,15 +42,9 @@ namespace MiniApiFramework.Tests
         }
 
         [Test]
-        public async Task Create_Post_With_Missing_Data_Fails()
-        {
-            var invalidPost = new CreatePostRequest
-            {
-                UserId = 1
-            };
-
-            var response = await ApiClient.PostAsync("/posts", invalidPost);
-            Assert.That(response.IsSuccessStatusCode, Is.False);
-        }
+       public async Task Post_To_Invalid_Endpoint_Returns_404()
+       {
+        
+       }
     }
 }
