@@ -50,6 +50,8 @@ namespace MiniApiFramework.Tests
             Title = "Test",
             Body = "Test"
         };
+
+        var response = await ApiClient.PostAsync("/invalidendpoint", post);
        }
     }
 }
