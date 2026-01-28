@@ -3,5 +3,8 @@ using NUnit.Framework;
 
 namespace MiniApiFramework.Helpers
 {
-    
+    public static class ResponseAssertions
+    {
+        
+    }
 }
