@@ -1,5 +1,6 @@
 using MiniApiFramework.Core;
 using MiniApiFramework.Models;
+using MiniApiFramework.Helpers;
 using NUnit.Framework;
 using System.Collections.Generic;
 using System.Runtime;
@@ -30,8 +31,8 @@ namespace MiniApiFramework.Tests
             };
 
             var response = await ApiClient.PostAsync("/posts", newPost);
-
-            Assert.That(response.StatusCode, Is.EqualTo(System.Net.HttpStatusCode.Created));
+            
+            ResponseAssertions.AssertSuccess(response);
         }
 
         [Test]
