@@ -10,5 +10,10 @@ namespace MiniApiFramework.Helpers
             Assert.That(response.IsSuccessStatusCode, Is.True,
             $"Expected success but got {response.StatusCode}");
         }
+
+        public static void AssertStatus (HttpResponseMessage response, int expected)
+        {
+            
+        }
     }
 }
