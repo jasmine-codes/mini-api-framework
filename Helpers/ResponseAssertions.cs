@@ -13,7 +13,7 @@ namespace MiniApiFramework.Helpers
 
         public static void AssertStatus (HttpResponseMessage response, int expected)
         {
-            
+            Assert.That((int)response.StatusCode, Is.EqualTo(expected));
         }
     }
 }
