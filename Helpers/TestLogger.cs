@@ -4,5 +4,11 @@ using System.Threading.Tasks;
 
 namespace MiniApiFramework.Helpers
 {
-    
+    public static class TestLogger
+    {
+        public static async Task LogResponse()
+        {
+            
+        }
+    }
 }
